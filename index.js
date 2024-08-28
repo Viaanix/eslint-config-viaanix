@@ -1,26 +1,28 @@
-import globals from 'globals'
-import pluginJs from '@eslint/js'
-import standard from './eslint-config-standard.js'
-import stylistic from '@stylistic/eslint-plugin'
+import globals from "globals";
+import pluginJs from "@eslint/js";
+import standard from "./eslint-config-standard.js";
+import stylistic from "@stylistic/eslint-plugin";
+import simpleImportSort from "eslint-plugin-simple-import-sort";
 
 export default [
   ...standard,
   pluginJs.configs.recommended,
   {
-    ignores: ['.src/dist/'],
+    ignores: [".src/dist/"],
     languageOptions: {
       globals: {
         ...globals.es2023,
-        ...globals.node
-      }
+        ...globals.node,
+      },
     },
     plugins: {
-      '@stylistic': stylistic
+      simpleImportSort,
+      "@stylistic": stylistic,
     },
     rules: {
-      'sort-imports': ['error'],
-      'no-duplicate-imports': ['error', { includeExports: true }],
-      '@stylistic/max-len': ['error', { code: 120 }]
-    }
-  }
-]
+      "sort-imports": ["error"],
+      "no-duplicate-imports": ["error", { includeExports: true }],
+      "@stylistic/max-len": ["error", { code: 120 }],
+    },
+  },
+];
