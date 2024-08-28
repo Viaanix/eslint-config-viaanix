@@ -22,7 +22,6 @@ export default [
     rules: {
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
-    //   "sort-imports": ["error"],
       "no-duplicate-imports": ["error", { includeExports: true }],
       "@stylistic/max-len": ["error", { code: 120 }],
     },

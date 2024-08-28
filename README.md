@@ -1,4 +1,6 @@
 # eslint-config-viaanix
+Custom eslint-config for Eslint 9+
+Based on [StandardJs](https://github.com/standard/eslint-config-standard)
 
 # Install
 `npm install git@github.com:Viaanix/eslint-config-viaanix.git`
