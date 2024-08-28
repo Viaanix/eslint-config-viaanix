@@ -8,7 +8,6 @@ export default [
   ...standard,
   pluginJs.configs.recommended,
   {
-    ignores: [".src/dist/"],
     languageOptions: {
       globals: {
         ...globals.es2023,
