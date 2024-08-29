@@ -1,0 +1,15 @@
+{
+    "eslint.debug": true,
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "eslint.validate": [
+        "json",
+        "javascript",
+        "typescript",
+      ],
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+}

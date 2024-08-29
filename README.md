@@ -2,13 +2,17 @@
 Custom eslint-config for Eslint 9+
 Based on [StandardJs](https://github.com/standard/eslint-config-standard)
 
-# Install
-`npm install git@github.com:Viaanix/eslint-config-viaanix.git`
+## Install
+```bash
+npm install git@github.com:Viaanix/eslint-config-viaanix.git
+```
+## Update
+Update config in project
+```bash
+npm update eslint-config-viaanix
+```
 
-# Update
-`npm update eslint-config-viaanix`
-
-#  Use
+##  Use
 `eslint.config.js`
 ```javascript
 import pluginJs from '@eslint/js'
@@ -40,5 +44,4 @@ export default [
     ignores: ['src/dist/*', 'dist/*']
   }
 ]
-
 ```

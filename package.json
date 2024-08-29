@@ -5,22 +5,25 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "eslint": ">= 9"
   },
   "devDependencies": {
-    "@eslint/js": "^9.9.1"
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1"
   },
   "dependencies": {
-    "eslint-plugin-simple-import-sort": "^12.1.1",
     "@stylistic/eslint-plugin": "^2.6.4",
+    "eslint-config-standardish": "github:brewpirate/eslint-config-standardish",
     "eslint-plugin-import-x": "^4.1.0",
     "eslint-plugin-n": "^17.10.2",
     "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^15.9.0"
   }
 }
