@@ -3,7 +3,7 @@ import stylistic from '@stylistic/eslint-plugin'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
 
-import * as standardishConfig from './eslint-config-standardish'
+import * as standardishConfig from './eslint-config-standardish.js'
 
 export default [
   standardishConfig,
