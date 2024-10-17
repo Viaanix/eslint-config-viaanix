@@ -3,10 +3,10 @@ import stylistic from '@stylistic/eslint-plugin'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
 
-import * as standardishConfig from './eslint-config-standardish.js'
+import standardishConfig from './eslint-config-standardish.js'
 
 export default [
-  standardishConfig,
+  ...standardishConfig,
   pluginJs.configs.recommended,
   {
     languageOptions: {
