@@ -1,8 +1,9 @@
 import pluginJs from '@eslint/js'
 import stylistic from '@stylistic/eslint-plugin'
-import standardishConfig from 'eslint-config-standardish'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
+
+import * as standardishConfig from './eslint-config-standardish'
 
 export default [
   standardishConfig,
