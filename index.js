@@ -6,7 +6,7 @@ import globals from 'globals'
 import standardishConfig from './eslint-config-standardish.js'
 
 export default [
-  ...standardishConfig,
+  standardishConfig,
   pluginJs.configs.recommended,
   {
     languageOptions: {
