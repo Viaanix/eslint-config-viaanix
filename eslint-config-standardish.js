@@ -1,5 +1,5 @@
 import stylistic from '@stylistic/eslint-plugin'
-import pluginImport from 'eslint-plugin-import'
+// import pluginImport from 'eslint-plugin-import'
 import pluginImportX from 'eslint-plugin-import-x'
 import pluginN from 'eslint-plugin-n'
 import pluginPromise from 'eslint-plugin-promise'
@@ -31,8 +31,8 @@ export default {
     '@stylistic': stylistic,
     'import-x': pluginImportX,
     n: pluginN,
-    promise: pluginPromise,
-    import: pluginImport
+    promise: pluginPromise
+    // import: pluginImport
   },
   rules: {
     'accessor-pairs': ['error', {
@@ -203,19 +203,19 @@ export default {
     ],
     yoda: ['error', 'never'],
 
-    'import/export': 'error',
-    'import/first': 'error',
-    'import/no-absolute-path': [
-      'error',
-      {
-        esmodule: true,
-        commonjs: true,
-        amd: false
-      }
-    ],
-    'import/no-duplicates': 'error',
-    'import/no-named-default': 'error',
-    'import/no-webpack-loader-syntax': 'error',
+    // 'import/export': 'error',
+    // 'import/first': 'error',
+    // 'import/no-absolute-path': [
+    //   'error',
+    //   {
+    //     esmodule: true,
+    //     commonjs: true,
+    //     amd: false
+    //   }
+    // ],
+    // 'import/no-duplicates': 'error',
+    // 'import/no-named-default': 'error',
+    // 'import/no-webpack-loader-syntax': 'error',
 
     'import-x/export': 'error',
     'import-x/first': 'error',
@@ -284,7 +284,7 @@ export default {
     ],
     '@stylistic/dot-location': ['error', 'property'],
     '@stylistic/eol-last': 'error',
-    '@stylistic/func-call-spacing': ['error', 'never'],
+    '@stylistic/function-call-spacing': ['error', 'never'],
     '@stylistic/generator-star-spacing': [
       'error',
       {
