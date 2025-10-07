@@ -1,6 +1,6 @@
 import stylistic from '@stylistic/eslint-plugin'
 import pluginImport from 'eslint-plugin-import'
-// import pluginImportX from 'eslint-plugin-import-x'
+import pluginImportX from 'eslint-plugin-import-x'
 import pluginN from 'eslint-plugin-n'
 import pluginPromise from 'eslint-plugin-promise'
 import globals from 'globals'
@@ -29,7 +29,7 @@ export default {
   },
   plugins: {
     '@stylistic': stylistic,
-    // 'import-x': pluginImportX,
+    'import-x': pluginImportX,
     n: pluginN,
     promise: pluginPromise,
     import: pluginImport
@@ -173,41 +173,63 @@ export default {
     'one-var': ['error', {
       initialized: 'never'
     }],
-    'prefer-const': ['error', {
-      destructuring: 'all'
-    }],
+    'prefer-const': [
+      'error',
+      {
+        destructuring: 'all'
+      }
+    ],
     'prefer-promise-reject-errors': 'error',
-    'prefer-regex-literals': ['error', {
-      disallowRedundantWrapping: true
-    }],
+    'prefer-regex-literals': [
+      'error',
+      {
+        disallowRedundantWrapping: true
+      }
+    ],
     'symbol-description': 'error',
     'unicode-bom': ['error', 'never'],
-    'use-isnan': ['error', {
-      enforceForIndexOf: true,
-      enforceForSwitchCase: true
-    }],
-    'valid-typeof': ['error', {
-      requireStringLiterals: true
-    }],
+    'use-isnan': [
+      'error',
+      {
+        enforceForIndexOf: true,
+        enforceForSwitchCase: true
+      }
+    ],
+    'valid-typeof': [
+      'error',
+      {
+        requireStringLiterals: true
+      }
+    ],
     yoda: ['error', 'never'],
 
     'import/export': 'error',
     'import/first': 'error',
-    'import/no-absolute-path': ['error', { esmodule: true, commonjs: true, amd: false }],
+    'import/no-absolute-path': [
+      'error',
+      {
+        esmodule: true,
+        commonjs: true,
+        amd: false
+      }
+    ],
     'import/no-duplicates': 'error',
     'import/no-named-default': 'error',
     'import/no-webpack-loader-syntax': 'error',
 
-    // 'import-x/export': 'error',
-    // 'import-x/first': 'error',
-    // 'import-x/no-absolute-path': ['error', {
-    //   amd: false,
-    //   commonjs: true,
-    //   esmodule: true
-    // }],
-    // 'import-x/no-duplicates': 'error',
-    // 'import-x/no-named-default': 'error',
-    // 'import-x/no-webpack-loader-syntax': 'error',
+    'import-x/export': 'error',
+    'import-x/first': 'error',
+    'import-x/no-absolute-path': [
+      'error',
+      {
+        amd: false,
+        commonjs: true,
+        esmodule: true
+      }
+    ],
+    'import-x/no-duplicates': 'error',
+    'import-x/no-named-default': 'error',
+    'import-x/no-webpack-loader-syntax': 'error',
 
     'n/handle-callback-err': ['error', '^(err|error)$'],
     'n/no-callback-literal': 'error',
@@ -220,36 +242,56 @@ export default {
     'promise/param-names': 'error',
 
     '@stylistic/array-bracket-spacing': ['error', 'never'],
-    '@stylistic/arrow-spacing': ['error', {
-      after: true,
-      before: true
-    }],
+    '@stylistic/arrow-spacing': [
+      'error',
+      {
+        after: true,
+        before: true
+      }
+    ],
     '@stylistic/block-spacing': ['error', 'always'],
-    '@stylistic/brace-style': ['error', '1tbs', {
-      allowSingleLine: true
-    }],
-    '@stylistic/comma-dangle': ['error', {
-      arrays: 'never',
-      exports: 'never',
-      functions: 'never',
-      imports: 'never',
-      objects: 'never'
-    }],
-    '@stylistic/comma-spacing': ['error', {
-      after: true,
-      before: false
-    }],
+    '@stylistic/brace-style': [
+      'error',
+      '1tbs',
+      {
+        allowSingleLine: true
+      }
+    ],
+    '@stylistic/comma-dangle': [
+      'error',
+      {
+        arrays: 'never',
+        exports: 'never',
+        functions: 'never',
+        imports: 'never',
+        objects: 'never'
+      }
+    ],
+    '@stylistic/comma-spacing': [
+      'error',
+      {
+        after: true,
+        before: false
+      }
+    ],
     '@stylistic/comma-style': ['error', 'last'],
-    '@stylistic/computed-property-spacing': ['error', 'never', {
-      enforceForClassMembers: true
-    }],
+    '@stylistic/computed-property-spacing': [
+      'error',
+      'never',
+      {
+        enforceForClassMembers: true
+      }
+    ],
     '@stylistic/dot-location': ['error', 'property'],
     '@stylistic/eol-last': 'error',
     '@stylistic/func-call-spacing': ['error', 'never'],
-    '@stylistic/generator-star-spacing': ['error', {
-      after: true,
-      before: true
-    }],
+    '@stylistic/generator-star-spacing': [
+      'error',
+      {
+        after: true,
+        before: true
+      }
+    ],
     '@stylistic/indent': ['error', 2, {
       ArrayExpression: 1,
       CallExpression: {
@@ -321,60 +363,91 @@ export default {
     '@stylistic/no-tabs': 'error',
     '@stylistic/no-trailing-spaces': 'error',
     '@stylistic/no-whitespace-before-property': 'error',
-    '@stylistic/object-curly-newline': ['error', {
-      consistent: true,
-      multiline: true
-    }],
-    '@stylistic/object-curly-spacing': ['error', 'always'],
-    '@stylistic/object-property-newline': ['error', {
-      allowMultiplePropertiesPerLine: true
-    }],
-    '@stylistic/operator-linebreak': ['error', 'after', {
-      overrides: {
-        ':': 'before',
-        '?': 'before',
-        '|>': 'before'
+    '@stylistic/object-curly-newline': [
+      'error',
+      {
+        consistent: true,
+        multiline: true
       }
-    }],
-    '@stylistic/padded-blocks': ['error', {
-      blocks: 'never',
-      classes: 'never',
-      switches: 'never'
-    }],
+    ],
+    '@stylistic/object-curly-spacing': ['error', 'always'],
+    '@stylistic/object-property-newline': [
+      'error',
+      {
+        allowMultiplePropertiesPerLine: true
+      }
+    ],
+    '@stylistic/operator-linebreak': [
+      'error',
+      'after',
+      {
+        overrides: {
+          ':': 'before',
+          '?': 'before',
+          '|>': 'before'
+        }
+      }
+    ],
+    '@stylistic/padded-blocks': [
+      'error',
+      {
+        blocks: 'never',
+        classes: 'never',
+        switches: 'never'
+      }
+    ],
     '@stylistic/quote-props': ['error', 'as-needed'],
-    '@stylistic/quotes': ['error', 'single', {
-      allowTemplateLiterals: false,
-      avoidEscape: true
-    }],
+    '@stylistic/quotes': [
+      'error',
+      'single',
+      {
+        allowTemplateLiterals: false,
+        avoidEscape: true
+      }
+    ],
     '@stylistic/rest-spread-spacing': ['error', 'never'],
     '@stylistic/semi': ['error', 'never'],
-    '@stylistic/semi-spacing': ['error', {
-      after: true,
-      before: false
-    }],
+    '@stylistic/semi-spacing': [
+      'error',
+      {
+        after: true,
+        before: false
+      }
+    ],
     '@stylistic/space-before-blocks': ['error', 'always'],
     '@stylistic/space-before-function-paren': ['error', 'always'],
     '@stylistic/space-in-parens': ['error', 'never'],
     '@stylistic/space-infix-ops': 'error',
-    '@stylistic/space-unary-ops': ['error', {
-      nonwords: false,
-      words: true
-    }],
-    '@stylistic/spaced-comment': ['error', 'always', {
-      block: {
-        balanced: true,
-        exceptions: ['*'],
-        markers: ['*package', '!', ',', ':', '::', 'flow-include']
-      },
-      line: {
-        markers: ['*package', '!', '/', ',', '=']
+    '@stylistic/space-unary-ops': [
+      'error',
+      {
+        nonwords: false,
+        words: true
       }
-    }],
+    ],
+    '@stylistic/spaced-comment': [
+      'error',
+      'always',
+      {
+        block: {
+          balanced: true,
+          exceptions: ['*'],
+          markers: ['*package', '!', ',', ':', '::', 'flow-include']
+        },
+        line: {
+          markers: ['*package', '!', '/', ',', '=']
+        }
+      }
+    ],
     '@stylistic/template-curly-spacing': ['error', 'never'],
     '@stylistic/template-tag-spacing': ['error', 'never'],
-    '@stylistic/wrap-iife': ['error', 'any', {
-      functionPrototypeMethods: true
-    }],
+    '@stylistic/wrap-iife': [
+      'error',
+      'any',
+      {
+        functionPrototypeMethods: true
+      }
+    ],
     '@stylistic/yield-star-spacing': ['error', 'both']
   }
 }
