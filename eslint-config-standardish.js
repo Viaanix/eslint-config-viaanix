@@ -374,7 +374,7 @@ export default {
     '@stylistic/object-property-newline': [
       'error',
       {
-        allowMultiplePropertiesPerLine: true
+        allowAllPropertiesOnSameLine: true
       }
     ],
     '@stylistic/operator-linebreak': [
