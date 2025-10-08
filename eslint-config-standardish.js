@@ -35,33 +35,45 @@ export default {
     // import: pluginImport
   },
   rules: {
-    'accessor-pairs': ['error', {
-      enforceForClassMembers: true,
-      setWithoutGet: true
-    }],
-    'array-callback-return': ['error', {
-      allowImplicit: false,
-      checkForEach: false
-    }],
-    camelcase: ['error', {
-      allow: ['^UNSAFE_'],
-      ignoreGlobals: true,
-      properties: 'never'
-    }],
+    'accessor-pairs': [
+      'error', {
+        enforceForClassMembers: true,
+        setWithoutGet: true
+      }
+    ],
+    'array-callback-return': [
+      'error', {
+        allowImplicit: false,
+        checkForEach: false
+      }
+    ],
+    camelcase: [
+      'error', {
+        allow: ['^UNSAFE_'],
+        ignoreGlobals: true,
+        properties: 'never'
+      }
+    ],
     'constructor-super': 'error',
     curly: ['error', 'multi-line'],
     'default-case-last': 'error',
-    'dot-notation': ['error', {
-      allowKeywords: true
-    }],
-    eqeqeq: ['error', 'always', {
-      null: 'ignore'
-    }],
-    'new-cap': ['error', {
-      capIsNew: false,
-      newIsCap: true,
-      properties: true
-    }],
+    'dot-notation': [
+      'error', {
+        allowKeywords: true
+      }
+    ],
+    eqeqeq: [
+      'error', 'always', {
+        null: 'ignore'
+      }
+    ],
+    'new-cap': [
+      'error', {
+        capIsNew: false,
+        newIsCap: true,
+        properties: true
+      }
+    ],
     'no-array-constructor': 'error',
     'no-async-promise-executor': 'error',
     'no-caller': 'error',
@@ -70,9 +82,11 @@ export default {
     'no-compare-neg-zero': 'error',
     'no-cond-assign': 'error',
     'no-const-assign': 'error',
-    'no-constant-condition': ['error', {
-      checkLoops: false
-    }],
+    'no-constant-condition': [
+      'error', {
+        checkLoops: false
+      }
+    ],
     'no-control-regex': 'error',
     'no-debugger': 'error',
     'no-delete-var': 'error',
@@ -80,9 +94,11 @@ export default {
     'no-dupe-class-members': 'error',
     'no-dupe-keys': 'error',
     'no-duplicate-case': 'error',
-    'no-empty': ['error', {
-      allowEmptyCatch: true
-    }],
+    'no-empty': [
+      'error', {
+        allowEmptyCatch: true
+      }
+    ],
     'no-empty-character-class': 'error',
     'no-empty-pattern': 'error',
     'no-eval': 'error',
@@ -98,10 +114,12 @@ export default {
     'no-invalid-regexp': 'error',
     'no-irregular-whitespace': 'error',
     'no-iterator': 'error',
-    'no-labels': ['error', {
-      allowLoop: false,
-      allowSwitch: false
-    }],
+    'no-labels': [
+      'error', {
+        allowLoop: false,
+        allowSwitch: false
+      }
+    ],
     'no-lone-blocks': 'error',
     'no-loss-of-precision': 'error',
     'no-misleading-character-class': 'error',
@@ -116,14 +134,18 @@ export default {
     'no-octal-escape': 'error',
     'no-proto': 'error',
     'no-prototype-builtins': 'error',
-    'no-redeclare': ['error', {
-      builtinGlobals: false
-    }],
+    'no-redeclare': [
+      'error', {
+        builtinGlobals: false
+      }
+    ],
     'no-regex-spaces': 'error',
     'no-return-assign': ['error', 'except-parens'],
-    'no-self-assign': ['error', {
-      props: true
-    }],
+    'no-self-assign': [
+      'error', {
+        props: true
+      }
+    ],
     'no-self-compare': 'error',
     'no-sequences': 'error',
     'no-shadow-restricted-names': 'error',
@@ -135,29 +157,37 @@ export default {
     'no-undef-init': 'error',
     'no-unexpected-multiline': 'error',
     'no-unmodified-loop-condition': 'error',
-    'no-unneeded-ternary': ['error', {
-      defaultAssignment: false
-    }],
+    'no-unneeded-ternary': [
+      'error', {
+        defaultAssignment: false
+      }
+    ],
     'no-unreachable': 'error',
     'no-unreachable-loop': 'error',
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
-    'no-unused-expressions': ['error', {
-      allowShortCircuit: true,
-      allowTaggedTemplates: true,
-      allowTernary: true
-    }],
-    'no-unused-vars': ['error', {
-      args: 'none',
-      caughtErrors: 'none',
-      ignoreRestSiblings: true,
-      vars: 'all'
-    }],
-    'no-use-before-define': ['error', {
-      classes: false,
-      functions: false,
-      variables: false
-    }],
+    'no-unused-expressions': [
+      'error', {
+        allowShortCircuit: true,
+        allowTaggedTemplates: true,
+        allowTernary: true
+      }
+    ],
+    'no-unused-vars': [
+      'error', {
+        args: 'none',
+        caughtErrors: 'none',
+        ignoreRestSiblings: true,
+        vars: 'all'
+      }
+    ],
+    'no-use-before-define': [
+      'error', {
+        classes: false,
+        functions: false,
+        variables: false
+      }
+    ],
     'no-useless-backreference': 'error',
     'no-useless-call': 'error',
     'no-useless-catch': 'error',
@@ -170,9 +200,11 @@ export default {
     'no-void': 'error',
     'no-with': 'error',
     'object-shorthand': ['warn', 'properties'],
-    'one-var': ['error', {
-      initialized: 'never'
-    }],
+    'one-var': [
+      'error', {
+        initialized: 'never'
+      }
+    ],
     'prefer-const': [
       'error',
       {
@@ -292,74 +324,90 @@ export default {
         before: true
       }
     ],
-    '@stylistic/indent': ['error', 2, {
-      ArrayExpression: 1,
-      CallExpression: {
-        arguments: 1
-      },
-      flatTernaryExpressions: false,
-      FunctionDeclaration: {
-        body: 1,
-        parameters: 1
-      },
-      FunctionExpression: {
-        body: 1,
-        parameters: 1
-      },
-      ignoreComments: false,
-      ignoredNodes: [
-        'TemplateLiteral *',
-        'JSXElement',
-        'JSXElement > *',
-        'JSXAttribute',
-        'JSXIdentifier',
-        'JSXNamespacedName',
-        'JSXMemberExpression',
-        'JSXSpreadAttribute',
-        'JSXExpressionContainer',
-        'JSXOpeningElement',
-        'JSXClosingElement',
-        'JSXFragment',
-        'JSXOpeningFragment',
-        'JSXClosingFragment',
-        'JSXText',
-        'JSXEmptyExpression',
-        'JSXSpreadChild'
-      ],
-      ImportDeclaration: 1,
-      MemberExpression: 1,
-      ObjectExpression: 1,
-      offsetTernaryExpressions: true,
-      outerIIFEBody: 1,
-      SwitchCase: 1,
-      VariableDeclarator: 1
-    }],
-    '@stylistic/key-spacing': ['error', {
-      afterColon: true,
-      beforeColon: false
-    }],
-    '@stylistic/keyword-spacing': ['error', {
-      after: true,
-      before: true
-    }],
-    '@stylistic/lines-between-class-members': ['error', 'always', {
-      exceptAfterSingleLine: true
-    }],
+    '@stylistic/indent': [
+      'error', 2, {
+        ArrayExpression: 1,
+        CallExpression: {
+          arguments: 1
+        },
+        flatTernaryExpressions: false,
+        FunctionDeclaration: {
+          body: 1,
+          parameters: 1
+        },
+        FunctionExpression: {
+          body: 1,
+          parameters: 1
+        },
+        ignoreComments: false,
+        ignoredNodes: [
+          'TemplateLiteral *',
+          'JSXElement',
+          'JSXElement > *',
+          'JSXAttribute',
+          'JSXIdentifier',
+          'JSXNamespacedName',
+          'JSXMemberExpression',
+          'JSXSpreadAttribute',
+          'JSXExpressionContainer',
+          'JSXOpeningElement',
+          'JSXClosingElement',
+          'JSXFragment',
+          'JSXOpeningFragment',
+          'JSXClosingFragment',
+          'JSXText',
+          'JSXEmptyExpression',
+          'JSXSpreadChild'
+        ],
+        ImportDeclaration: 1,
+        MemberExpression: 1,
+        ObjectExpression: 1,
+        offsetTernaryExpressions: true,
+        outerIIFEBody: 1,
+        SwitchCase: 1,
+        VariableDeclarator: 1
+      }
+    ],
+    '@stylistic/key-spacing': [
+      'error', {
+        afterColon: true,
+        beforeColon: false
+      }
+    ],
+    '@stylistic/keyword-spacing': [
+      'error', {
+        after: true,
+        before: true
+      }
+    ],
+    '@stylistic/lines-between-class-members': [
+      'error', 'always', {
+        exceptAfterSingleLine: true
+      }
+    ],
     '@stylistic/multiline-ternary': ['error', 'always-multiline'],
     '@stylistic/new-parens': 'error',
     '@stylistic/no-extra-parens': ['error', 'functions'],
     '@stylistic/no-floating-decimal': 'error',
-    '@stylistic/no-mixed-operators': ['error', {
-      allowSamePrecedence: true,
-      groups: [['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']]
-    }],
+    '@stylistic/no-mixed-operators': [
+      'error', {
+        allowSamePrecedence: true,
+        groups: [
+          [
+            '==', '!=', '===', '!==', '>', '>=', '<', '<='
+          ], ['&&', '||'], ['in', 'instanceof']
+        ]
+      }
+    ],
     '@stylistic/no-mixed-spaces-and-tabs': 'error',
     '@stylistic/no-multi-spaces': 'error',
-    '@stylistic/no-multiple-empty-lines': ['error', {
-      max: 1,
-      maxBOF: 0,
-      maxEOF: 0
-    }],
+    '@stylistic/no-multiple-empty-lines': [
+      'error', {
+        max: 1,
+        maxBOF: 0,
+        maxEOF: 0
+      }
+    ],
     '@stylistic/no-tabs': 'error',
     '@stylistic/no-trailing-spaces': 'error',
     '@stylistic/no-whitespace-before-property': 'error',
@@ -401,7 +449,7 @@ export default {
       'error',
       'single',
       {
-        allowTemplateLiterals: false,
+        allowTemplateLiterals: 'never',
         avoidEscape: true
       }
     ],
@@ -432,7 +480,9 @@ export default {
         block: {
           balanced: true,
           exceptions: ['*'],
-          markers: ['*package', '!', ',', ':', '::', 'flow-include']
+          markers: [
+            '*package', '!', ',', ':', '::', 'flow-include'
+          ]
         },
         line: {
           markers: ['*package', '!', '/', ',', '=']
