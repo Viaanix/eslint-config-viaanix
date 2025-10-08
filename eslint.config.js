@@ -1,8 +1,10 @@
+import { defineConfig } from 'eslint/config'
+
 import viaanix from './index.js'
 
-export default [
+export default defineConfig([
   ...viaanix,
   {
     files: ['*.js']
   }
-]
+])
