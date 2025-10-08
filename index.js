@@ -92,18 +92,6 @@ export default [
 ]
 
 export const vxts = [
-  // tseslint.configs.strict,
-  // tseslint.configs.stylistic,
-  tseslint.configs.strictTypeChecked,
-  tseslint.configs.stylisticTypeChecked,
-  {
-    languageOptions: {
-      parserOptions: {
-        projectService: true
-      }
-    },
-    rules: {
-      '@typescript-eslint/restrict-plus-operands': 'error'
-    }
-  }
+  tseslint.configs.strict,
+  tseslint.configs.stylistic
 ]
