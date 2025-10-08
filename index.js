@@ -1,4 +1,3 @@
-// import pluginJs from '@eslint/js'
 import eslint from '@eslint/js'
 import json from '@eslint/json'
 import markdown from '@eslint/markdown'
