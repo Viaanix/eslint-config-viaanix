@@ -2,6 +2,7 @@ import eslint from '@eslint/js'
 import json from '@eslint/json'
 import markdown from '@eslint/markdown'
 import stylistic from '@stylistic/eslint-plugin'
+import importNewlines from 'eslint-plugin-import-newlines'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
@@ -48,7 +49,8 @@ export default [
     },
     plugins: {
       'simple-import-sort': simpleImportSort,
-      '@stylistic': stylistic
+      '@stylistic': stylistic,
+      'import-newlines': importNewlines
     },
     rules: {
       'simple-import-sort/imports': 'error',
