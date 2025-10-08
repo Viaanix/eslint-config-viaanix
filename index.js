@@ -53,6 +53,8 @@ export default [
       'import-newlines': importNewlines
     },
     rules: {
+      'no-useless-concat': 'error',
+      'prefer-template': 'error',
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
       'no-duplicate-imports': [
@@ -90,6 +92,18 @@ export default [
 ]
 
 export const vxts = [
-  tseslint.configs.strict,
-  tseslint.configs.stylistic
+  // tseslint.configs.strict,
+  // tseslint.configs.stylistic,
+  tseslint.configs.strictTypeChecked,
+  tseslint.configs.stylisticTypeChecked,
+  {
+    languageOptions: {
+      parserOptions: {
+        projectService: true
+      }
+    },
+    rules: {
+      '@typescript-eslint/restrict-plus-operands': 'error'
+    }
+  }
 ]
