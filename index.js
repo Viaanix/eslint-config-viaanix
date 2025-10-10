@@ -2,6 +2,7 @@ import eslint from '@eslint/js'
 import json from '@eslint/json'
 import markdown from '@eslint/markdown'
 import stylistic from '@stylistic/eslint-plugin'
+import { globalIgnores } from 'eslint/config'
 import importNewlines from 'eslint-plugin-import-newlines'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
@@ -20,6 +21,7 @@ export const configOverride = (options = {
 }) => {
   const { maxLineLength, tabWidth } = options
   return [
+    globalIgnores(['.*/', 'dist/', 'docs/', 'package-lock.json']),
     {
       files: ['**/*.{js,mjs,cjs,ts}'],
       extends: [eslint.configs.recommended],
