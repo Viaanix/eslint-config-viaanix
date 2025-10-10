@@ -1,9 +1,12 @@
 import { defineConfig } from 'eslint/config'
 
-import viaanix from './index.js'
+import { configOverride } from './index.js'
 
 export default defineConfig([
-  ...viaanix,
+  ...configOverride({
+    maxLineLength: 100,
+    tabWidth: 4
+  }),
   {
     files: ['*.js']
   }
