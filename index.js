@@ -12,7 +12,17 @@ import standardishConfig from './eslint-config-standardish.js'
 
 export const vxts = [
   tseslint.configs.strict,
-  tseslint.configs.stylistic
+  tseslint.configs.stylistic,
+  {
+    plugins: {
+      '@stylistic': stylistic
+    },
+    rules: {
+      '@typescript-eslint/consistent-type-imports': 'error',
+      '@stylistic/type-generic-spacing': 'error',
+      '@stylistic/type-annotation-spacing': ['error', { 'before': false, 'after': true }]
+    }
+  }  
 ]
 
 export const configOverride = (options = {
@@ -39,7 +49,7 @@ export const configOverride = (options = {
       files: ['**/*.jsonc'],
       plugins: { json },
       language: 'json/jsonc',
-      extends: ['json/recommended']
+      extends: ['json/recommended', 'stylistic.configs.recommended']
     },
     {
       files: ['**/*.md'],
