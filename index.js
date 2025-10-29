@@ -1,4 +1,4 @@
-import eslint from '@eslint/js'
+import js from '@eslint/js'
 import json from '@eslint/json'
 import markdown from '@eslint/markdown'
 import stylistic from '@stylistic/eslint-plugin'
@@ -22,7 +22,7 @@ export const vxts = [
       '@stylistic/type-generic-spacing': 'error',
       '@stylistic/type-annotation-spacing': ['error', { 'before': false, 'after': true }]
     }
-  }  
+  }
 ]
 
 export const configOverride = (options = {
@@ -33,8 +33,9 @@ export const configOverride = (options = {
   return [
     globalIgnores(['.*/', 'dist/', 'docs/', 'package-lock.json']),
     {
+      plugins: { js },
       files: ['**/*.{js,mjs,cjs,ts}'],
-      extends: [eslint.configs.recommended],
+      extends: ['js/recommended'],
       languageOptions: {
         globals: globals.node
       }
@@ -49,7 +50,7 @@ export const configOverride = (options = {
       files: ['**/*.jsonc'],
       plugins: { json },
       language: 'json/jsonc',
-      extends: ['json/recommended', 'stylistic.configs.recommended']
+      extends: ['json/recommended']
     },
     {
       files: ['**/*.md'],

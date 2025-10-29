@@ -7,7 +7,7 @@
     "eslint.validate": [
         "json",
         "javascript",
-        "typescript"
+        // "typescript"
     ],
     "[javascript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
