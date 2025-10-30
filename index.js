@@ -14,14 +14,9 @@ export const vxts = [
   tseslint.configs.strict,
   tseslint.configs.recommended,
   tseslint.configs.stylistic,
-  tseslint.configs.stylisticTypeChecked,
   stylistic.configs.recommended,
   {
-    languageOptions: {
-      parserOptions: {
-        projectService: true
-      }
-    },
+    files: ['**/*.{ts}'],
     plugins: {
       '@stylistic': stylistic
     },
@@ -48,24 +43,24 @@ export const configOverride = (options = {
         globals: globals.node
       }
     },
-    {
-      files: ['**/*.json'],
-      plugins: { json },
-      language: 'json/json',
-      extends: ['json/recommended']
-    },
-    {
-      files: ['**/*.jsonc'],
-      plugins: { json },
-      language: 'json/jsonc',
-      extends: ['json/recommended']
-    },
-    {
-      files: ['**/*.md'],
-      plugins: { markdown },
-      language: 'markdown/gfm',
-      extends: ['markdown/recommended']
-    },
+    // {
+    //   files: ['**/*.json'],
+    //   plugins: { json },
+    //   language: 'json/json',
+    //   extends: ['json/recommended']
+    // },
+    // {
+    //   files: ['**/*.jsonc'],
+    //   plugins: { json },
+    //   language: 'json/jsonc',
+    //   extends: ['json/recommended']
+    // },
+    // {
+    //   files: ['**/*.md'],
+    //   plugins: { markdown },
+    //   language: 'markdown/gfm',
+    //   extends: ['markdown/recommended']
+    // },
     {
       files: ['**/*.{js,mjs,cjs,ts}'],
       extends: [standardishConfig],
