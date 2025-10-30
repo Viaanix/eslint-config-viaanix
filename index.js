@@ -12,8 +12,16 @@ import standardishConfig from './eslint-config-standardish.js'
 
 export const vxts = [
   tseslint.configs.strict,
+  tseslint.configs.recommended,
   tseslint.configs.stylistic,
+  tseslint.configs.stylisticTypeChecked,
+  stylistic.configs.recommended,
   {
+    languageOptions: {
+      parserOptions: {
+        projectService: true
+      }
+    },
     plugins: {
       '@stylistic': stylistic
     },
@@ -80,7 +88,8 @@ export const configOverride = (options = {
         'no-duplicate-imports': [
           'error',
           {
-            includeExports: true
+            includeExports: true,
+            allowSeparateTypeImports: true
           }
         ],
         '@stylistic/array-bracket-newline': ['error', { multiline: true, minItems: 6 }],
