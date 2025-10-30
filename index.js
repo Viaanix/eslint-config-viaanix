@@ -1,6 +1,4 @@
 import js from '@eslint/js'
-import json from '@eslint/json'
-import markdown from '@eslint/markdown'
 import stylistic from '@stylistic/eslint-plugin'
 import { globalIgnores } from 'eslint/config'
 import importNewlines from 'eslint-plugin-import-newlines'
