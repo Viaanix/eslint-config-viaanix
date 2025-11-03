@@ -41,24 +41,6 @@ export const configOverride = (options = {
         globals: globals.node
       }
     },
-    // {
-    //   files: ['**/*.json'],
-    //   plugins: { json },
-    //   language: 'json/json',
-    //   extends: ['json/recommended']
-    // },
-    // {
-    //   files: ['**/*.jsonc'],
-    //   plugins: { json },
-    //   language: 'json/jsonc',
-    //   extends: ['json/recommended']
-    // },
-    // {
-    //   files: ['**/*.md'],
-    //   plugins: { markdown },
-    //   language: 'markdown/gfm',
-    //   extends: ['markdown/recommended']
-    // },
     {
       files: ['**/*.{js,mjs,cjs,ts}'],
       extends: [standardishConfig],
