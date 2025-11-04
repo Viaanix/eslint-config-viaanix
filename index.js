@@ -84,6 +84,7 @@ export const configOverride = (options = {
             unnecessary: false
           }
         ],
+        '@stylistic/brace-style': ['error', '1tbs', { 'allowSingleLine': true }],
         'import-newlines/enforce': [
           'error',
           {
